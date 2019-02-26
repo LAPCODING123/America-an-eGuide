@@ -7,34 +7,6 @@
     android:background="@drawable/american_flag"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="113dp"
-        android:layout_height="46dp"
-        android:background="@android:color/transparent"
-        android:text="@string/womenWearingHandkerchief"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
-        app:layout_constraintTop_toTopOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="305dp" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="113dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
-        android:text="@string/manWearingTurban"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.131"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.564" />
-
     <TextView
         android:id="@+id/americaTheeGuideTextViewID"
         android:layout_width="442dp"
@@ -73,32 +45,5 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/americaTheeGuideTextViewID" />
-
-    <TextView
-        android:id="@+id/identityStatusTextViewID"
-        android:layout_width="94dp"
-        android:layout_height="88dp"
-        android:text="@string/manWearingTurban"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="606dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="113dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
-        android:text="@string/manWearingTurban"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.937"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.564" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
