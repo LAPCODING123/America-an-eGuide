@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/american_flag"
+    tools:context=".GetAJob">
+
+    <TextView
+        android:id="@+id/americaTheeGuideTextViewID6"
+        android:layout_width="660dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/americaGetAJob"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="52sp"
+        app:fontFamily="@font/lobster"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="161dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="84dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton17"
+        app:layout_constraintTop_toBottomOf="@+id/americaTheeGuideTextViewID6"
+        app:srcCompat="@drawable/doctor" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="136dp"
+        android:layout_height="126dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton16"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton18"
+        app:layout_constraintTop_toTopOf="@+id/imageButton16"
+        app:srcCompat="@drawable/nurse" />
+
+    <ImageButton
+        android:id="@+id/imageButton18"
+        android:layout_width="208dp"
+        android:layout_height="133dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton17"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton19"
+        app:layout_constraintTop_toTopOf="@+id/imageButton17"
+        app:srcCompat="@drawable/teacher" />
+
+    <ImageButton
+        android:id="@+id/imageButton19"
+        android:layout_width="211dp"
+        android:layout_height="107dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton18"
+        app:srcCompat="@drawable/mcdonaldworker" />
+</androidx.constraintlayout.widget.ConstraintLayout>
