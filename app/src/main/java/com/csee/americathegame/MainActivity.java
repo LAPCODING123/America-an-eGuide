@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         nextPageButton = findViewById(R.id.proceedToNextPageImageButtonID);
 
         nextPageButton.setOnClickListener(new View.OnClickListener() {

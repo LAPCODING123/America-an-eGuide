@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/americaTheeGuideTextViewID2"
-        android:layout_width="552dp"
-        android:layout_height="139dp"
+        android:layout_width="660dp"
+        android:layout_height="69dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:text="@string/americaChooseWhoYouAre"
@@ -19,21 +19,9 @@
         android:textSize="52sp"
         app:fontFamily="@font/lobster"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/statusFragmentID"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.095" />
-
-    <fragment
-        android:id="@+id/statusFragmentID"
-        android:name="com.csee.americathegame.StatusBox"
-        android:layout_width="149dp"
-        android:layout_height="92dp"
-        app:layout_constraintBottom_toBottomOf="@+id/americaTheeGuideTextViewID2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.928"
-        app:layout_constraintStart_toEndOf="@+id/americaTheeGuideTextViewID2"
-        app:layout_constraintTop_toTopOf="@+id/americaTheeGuideTextViewID2"
-        tools:layout="@layout/fragment_status_box" />
 </androidx.constraintlayout.widget.ConstraintLayout>
