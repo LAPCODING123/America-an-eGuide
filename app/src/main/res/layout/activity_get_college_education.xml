@@ -27,8 +27,8 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
@@ -42,12 +42,12 @@
 
     <ImageButton
         android:id="@+id/imageButton15"
-        android:layout_width="190dp"
-        android:layout_height="173dp"
+        android:layout_width="253dp"
+        android:layout_height="198dp"
         android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="@+id/americaTheeGuideTextViewID5"
-        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintHorizontal_bias="0.194"
         app:layout_constraintStart_toStartOf="@+id/americaTheeGuideTextViewID5"
         app:srcCompat="@drawable/highereducationclipartgraduationcap"
-        tools:layout_editor_absoluteY="213dp" />
+        tools:layout_editor_absoluteY="188dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

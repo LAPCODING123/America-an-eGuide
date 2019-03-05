@@ -11,11 +11,11 @@
         android:id="@+id/imageView4"
         android:layout_width="35dp"
         android:layout_height="49dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+        app:layout_constraintBottom_toBottomOf="@+id/blackMaleImageButtonID"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
-        app:layout_constraintTop_toTopOf="@+id/imageButton4"
+        app:layout_constraintStart_toEndOf="@+id/blackMaleImageButtonID"
+        app:layout_constraintTop_toTopOf="@+id/blackMaleImageButtonID"
         app:layout_constraintVertical_bias="0.818"
         app:srcCompat="@drawable/greendollarsymbol" />
 
@@ -38,8 +38,8 @@
         android:layout_height="54dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintBottom_toBottomOf="@+id/tanMaleImageButtonID"
+        app:layout_constraintEnd_toStartOf="@+id/tannerMaleImageButtonID"
         app:layout_constraintTop_toBottomOf="@+id/americaTheeGuideTextViewID2"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/greendollarsymbol" />
@@ -51,7 +51,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton5"
+        app:layout_constraintBottom_toTopOf="@+id/whiteFemaleImageButtonID"
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintHorizontal_bias="0.692"
         app:layout_constraintStart_toStartOf="@+id/imageView"
@@ -76,7 +76,7 @@
         app:layout_constraintVertical_bias="0.095" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/whiteMaleImageButtonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -84,24 +84,24 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintEnd_toStartOf="@+id/tanMaleImageButtonID"
         app:layout_constraintStart_toStartOf="@+id/americaTheeGuideTextViewID2"
         app:layout_constraintTop_toBottomOf="@+id/americaTheeGuideTextViewID2"
         app:srcCompat="@drawable/whitemale" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/tanMaleImageButtonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintEnd_toStartOf="@+id/tannerMaleImageButtonID"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/whiteMaleImageButtonID"
         app:layout_constraintTop_toBottomOf="@+id/americaTheeGuideTextViewID2"
         app:srcCompat="@drawable/tanmale" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/tannerMaleImageButtonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -109,14 +109,14 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/blackMaleImageButtonID"
         app:layout_constraintHorizontal_bias="0.461"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintStart_toEndOf="@+id/tanMaleImageButtonID"
         app:layout_constraintTop_toBottomOf="@+id/americaTheeGuideTextViewID2"
         app:srcCompat="@drawable/tannermale" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/blackMaleImageButtonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -127,51 +127,51 @@
         app:srcCompat="@drawable/blackmale" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/whiteFemaleImageButtonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/whiteMaleImageButtonID"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/imageButton"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/whiteMaleImageButtonID"
+        app:layout_constraintTop_toBottomOf="@+id/whiteMaleImageButtonID"
         app:srcCompat="@drawable/whitefemale" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/tanFemaleImageButtonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="@+id/tanMaleImageButtonID"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/imageButton2"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="@+id/tanMaleImageButtonID"
+        app:layout_constraintTop_toBottomOf="@+id/tanMaleImageButtonID"
         app:srcCompat="@drawable/tanfemale" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/tannerFemaleImageButtonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+        app:layout_constraintEnd_toEndOf="@+id/tannerMaleImageButtonID"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/imageButton3"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="@+id/tannerMaleImageButtonID"
+        app:layout_constraintTop_toBottomOf="@+id/tannerMaleImageButtonID"
         app:srcCompat="@drawable/tannerfemale" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/blackFemaleImageButtonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="@+id/blackMaleImageButtonID"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/imageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintStart_toStartOf="@+id/blackMaleImageButtonID"
+        app:layout_constraintTop_toBottomOf="@+id/blackMaleImageButtonID"
         app:srcCompat="@drawable/blackfemale" />
 
     <ImageView
@@ -183,11 +183,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintEnd_toStartOf="@+id/whiteMaleImageButtonID"
+        app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        app:layout_constraintVertical_bias="0.85"
+        app:layout_constraintTop_toBottomOf="@+id/whiteMaleImageButtonID"
+        app:layout_constraintVertical_bias="0.862"
         app:srcCompat="@drawable/greendollarsymbol" />
 
     <ImageView
@@ -197,7 +197,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton5"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintBottom_toTopOf="@+id/whiteFemaleImageButtonID"
+        app:layout_constraintEnd_toStartOf="@+id/whiteMaleImageButtonID"
         app:srcCompat="@drawable/greendollarsymbol" />
 </androidx.constraintlayout.widget.ConstraintLayout>

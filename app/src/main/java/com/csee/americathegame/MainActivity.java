@@ -11,8 +11,14 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
     ImageButton nextPageButton;
+    public static Random rand = new Random();
+    @DrawableRes public static int choosenFace = 0;
+    public static final int NUMBER_OF_SELECTABLE_ETHNICITIES = 8;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
