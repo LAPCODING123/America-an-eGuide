@@ -17,7 +17,10 @@ public class MainActivity extends AppCompatActivity {
     ImageButton nextPageButton;
     public static Random rand = new Random();
     @DrawableRes public static int choosenFace = 0;
-    public static final int NUMBER_OF_SELECTABLE_ETHNICITIES = 8;
+    @DrawableRes public static int choosenCreed = 0;
+    public static double balance = 18000.00; //average amount of money saved for college
+    public static boolean collegEducated = false;
+    public static double pay = 0;
 
 
     @Override
@@ -37,5 +40,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+
+    public static void getPaid(){
+        balance += pay;
     }
 }

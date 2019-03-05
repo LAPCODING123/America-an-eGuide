@@ -26,20 +26,25 @@
         app:layout_constraintVertical_bias="0.095" />
 
     <ImageButton
-        android:id="@+id/imageButton14"
+        android:id="@+id/nostalgiaImageButtonID"
         android:layout_width="317dp"
         android:layout_height="219dp"
+        android:layout_marginTop="8dp"
         android:scaleType="centerInside"
-        app:srcCompat="@drawable/eightiesmontage"
-        tools:layout_editor_absoluteX="218dp"
-        tools:layout_editor_absoluteY="117dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/americaTheeGuideTextViewID4"
+        app:srcCompat="@drawable/eightiesmontage" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/noNostalgiaImageButtoniD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/getSomeEightiesRemake"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="287dp"
-        tools:layout_editor_absoluteY="347dp" />
+        app:layout_constraintEnd_toEndOf="@+id/nostalgiaImageButtonID"
+        app:layout_constraintStart_toStartOf="@+id/nostalgiaImageButtonID"
+        app:layout_constraintTop_toBottomOf="@+id/nostalgiaImageButtonID" />
 </androidx.constraintlayout.widget.ConstraintLayout>

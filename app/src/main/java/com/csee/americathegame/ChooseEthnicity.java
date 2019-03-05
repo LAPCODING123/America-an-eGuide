@@ -17,7 +17,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class ChooseEthnicity extends AppCompatActivity {
-    ImageButton[] imageButtons = new ImageButton[MainActivity.NUMBER_OF_SELECTABLE_ETHNICITIES];
+    ImageButton[] imageButtons = new ImageButton[8];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,78 @@ public class ChooseEthnicity extends AppCompatActivity {
         imageButtons[0].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ChooseEthnicity.this,"Welcome Back", Toast.LENGTH_LONG).show();
+                Toast.makeText(ChooseEthnicity.this,"Hello Fellow Citizen", Toast.LENGTH_LONG).show();
+                MainActivity.choosenFace = R.id.whiteMaleImageButtonID;
+                switchToChooseCreed();
+            }
+        });
+
+
+        imageButtons[1].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ChooseEthnicity.this,"Hello Southerner", Toast.LENGTH_LONG).show();
+                MainActivity.choosenFace = R.id.tanMaleImageButtonID;
+                MainActivity.balance -= 100.0;
+                switchToChooseCreed();
+            }
+        });
+
+        imageButtons[2].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ChooseEthnicity.this,"Hello foreigner", Toast.LENGTH_LONG).show();
+                MainActivity.choosenFace = R.id.tannerMaleImageButtonID;
+                MainActivity.balance -= 200.0;
+                switchToChooseCreed();
+            }
+        });
+
+        imageButtons[3].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ChooseEthnicity.this,"Hello, You matter*!", Toast.LENGTH_LONG).show();
+                MainActivity.choosenFace = R.id.blackMaleImageButtonID;
+                MainActivity.balance -= 300.0;
+                switchToChooseCreed();
+            }
+        });
+
+        imageButtons[4].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ChooseEthnicity.this,"Greetings Miss", Toast.LENGTH_LONG).show();
+                MainActivity.choosenFace = R.id.whiteFemaleImageButtonID;
+                switchToChooseCreed();
+            }
+        });
+
+        imageButtons[5].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ChooseEthnicity.this,"Hola señora", Toast.LENGTH_LONG).show();
+                MainActivity.choosenFace = R.id.tanFemaleImageButtonID;
+                MainActivity.balance -= 100.0;
+                switchToChooseCreed();
+            }
+        });
+
+        imageButtons[6].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ChooseEthnicity.this,"Hello Foreigner", Toast.LENGTH_LONG).show();
+                MainActivity.choosenFace = R.id.tannerFemaleImageButtonID;
+                MainActivity.balance -= 200.0;
+                switchToChooseCreed();
+            }
+        });
+
+        imageButtons[7].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ChooseEthnicity.this,"Hello ma\'am", Toast.LENGTH_LONG).show();
+                MainActivity.choosenFace = R.id.blackFemaleImageButtonID;
+                MainActivity.balance -= 300.0;
                 switchToChooseCreed();
             }
         });

@@ -26,48 +26,48 @@
         app:layout_constraintVertical_bias="0.095" />
 
     <ImageButton
-        android:id="@+id/imageButton16"
+        android:id="@+id/doctorImageButtonID"
         android:layout_width="161dp"
         android:layout_height="140dp"
         android:layout_marginTop="84dp"
         android:scaleType="centerInside"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton17"
+        app:layout_constraintEnd_toStartOf="@+id/nurseImageBurttonID"
         app:layout_constraintTop_toBottomOf="@+id/americaTheeGuideTextViewID6"
         app:srcCompat="@drawable/doctor" />
 
     <ImageButton
-        android:id="@+id/imageButton17"
+        android:id="@+id/nurseImageBurttonID"
         android:layout_width="136dp"
         android:layout_height="126dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton16"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton18"
-        app:layout_constraintTop_toTopOf="@+id/imageButton16"
+        app:layout_constraintBottom_toBottomOf="@+id/doctorImageButtonID"
+        app:layout_constraintEnd_toStartOf="@+id/teacherImageButtonID"
+        app:layout_constraintTop_toTopOf="@+id/doctorImageButtonID"
         app:srcCompat="@drawable/nurse" />
 
     <ImageButton
-        android:id="@+id/imageButton18"
+        android:id="@+id/teacherImageButtonID"
         android:layout_width="208dp"
         android:layout_height="133dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton17"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton19"
-        app:layout_constraintTop_toTopOf="@+id/imageButton17"
+        app:layout_constraintBottom_toBottomOf="@+id/nurseImageBurttonID"
+        app:layout_constraintEnd_toStartOf="@+id/mcDWorkerImageButtonID"
+        app:layout_constraintTop_toTopOf="@+id/nurseImageBurttonID"
         app:srcCompat="@drawable/teacher" />
 
     <ImageButton
-        android:id="@+id/imageButton19"
+        android:id="@+id/mcDWorkerImageButtonID"
         android:layout_width="211dp"
         android:layout_height="107dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton18"
+        app:layout_constraintBottom_toBottomOf="@+id/teacherImageButtonID"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageButton18"
+        app:layout_constraintTop_toTopOf="@+id/teacherImageButtonID"
         app:srcCompat="@drawable/mcdonaldworker" />
 </androidx.constraintlayout.widget.ConstraintLayout>

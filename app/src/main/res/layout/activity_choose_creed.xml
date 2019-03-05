@@ -26,69 +26,84 @@
         app:layout_constraintVertical_bias="0.095" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/chistianityImageButtonID"
         android:layout_width="265dp"
         android:layout_height="268dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/judaismImageButtonID"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/americaTheeGuideTextViewID3"
+        app:layout_constraintVertical_bias="0.235"
         app:srcCompat="@drawable/latincross" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/judaismImageButtonID"
         android:layout_width="91dp"
         android:layout_height="95dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton9"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton11"
+        app:layout_constraintBottom_toBottomOf="@+id/chistianityImageButtonID"
+        app:layout_constraintEnd_toStartOf="@+id/islamImageButtonID"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton9"
-        app:layout_constraintTop_toTopOf="@+id/imageButton9"
+        app:layout_constraintStart_toEndOf="@+id/chistianityImageButtonID"
+        app:layout_constraintTop_toTopOf="@+id/chistianityImageButtonID"
         app:srcCompat="@drawable/starofdavid" />
 
     <ImageButton
-        android:id="@+id/imageButton11"
+        android:id="@+id/islamImageButtonID"
         android:layout_width="56dp"
         android:layout_height="60dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton10"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton12"
+        app:layout_constraintBottom_toBottomOf="@+id/judaismImageButtonID"
+        app:layout_constraintEnd_toStartOf="@+id/buddhismImageButtonID"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton10"
-        app:layout_constraintTop_toTopOf="@+id/imageButton10"
+        app:layout_constraintStart_toEndOf="@+id/judaismImageButtonID"
+        app:layout_constraintTop_toTopOf="@+id/judaismImageButtonID"
         app:srcCompat="@drawable/islamsymbol" />
 
     <ImageButton
-        android:id="@+id/imageButton12"
+        android:id="@+id/buddhismImageButtonID"
         android:layout_width="47dp"
         android:layout_height="48dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton11"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton13"
+        app:layout_constraintBottom_toBottomOf="@+id/islamImageButtonID"
+        app:layout_constraintEnd_toStartOf="@+id/hindiusiImageButtonID"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton11"
-        app:layout_constraintTop_toTopOf="@+id/imageButton11"
+        app:layout_constraintStart_toEndOf="@+id/islamImageButtonID"
+        app:layout_constraintTop_toTopOf="@+id/islamImageButtonID"
         app:srcCompat="@drawable/buddhismsymbol" />
 
     <ImageButton
-        android:id="@+id/imageButton13"
+        android:id="@+id/hindiusiImageButtonID"
         android:layout_width="35dp"
         android:layout_height="36dp"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton12"
+        app:layout_constraintBottom_toBottomOf="@+id/buddhismImageButtonID"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton12"
-        app:layout_constraintTop_toTopOf="@+id/imageButton12"
+        app:layout_constraintStart_toEndOf="@+id/buddhismImageButtonID"
+        app:layout_constraintTop_toTopOf="@+id/buddhismImageButtonID"
         app:srcCompat="@drawable/hindusymbol" />
+
+    <Button
+        android:id="@+id/noReligionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/noReligion"
+        app:layout_constraintBottom_toBottomOf="@+id/chistianityImageButtonID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chistianityImageButtonID"
+        app:layout_constraintTop_toBottomOf="@+id/judaismImageButtonID" />
 </androidx.constraintlayout.widget.ConstraintLayout>

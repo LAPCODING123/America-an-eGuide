@@ -3,6 +3,8 @@
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.csee.americathegame">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <dist:module dist:instant="true" />
 
     <application
@@ -12,11 +14,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GetAPlaceToLive"></activity>
-        <activity android:name=".GetAJob" />
-        <activity android:name=".GetCollegeEducation" />
-        <activity android:name=".SeeButDontKeepNostalgia" />
-        <activity android:name=".ChooseCreed" />
+        <activity android:name=".Redscare"
+            android:screenOrientation="landscape" ></activity>
+        <activity android:name=".Prohibition"
+            android:screenOrientation="landscape" />
+        <activity android:name=".HaveAFamily"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".HaveFreedom"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GetAPlaceToLive"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GetAJob"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GetCollegeEducation"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SeeButDontKeepNostalgia"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ChooseCreed"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".ChooseEthnicity"
             android:screenOrientation="landscape" />
