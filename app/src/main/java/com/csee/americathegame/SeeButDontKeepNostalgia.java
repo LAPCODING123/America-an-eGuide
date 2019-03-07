@@ -26,7 +26,7 @@ public class SeeButDontKeepNostalgia extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(SeeButDontKeepNostalgia.this, "Can't timetravel", Toast.LENGTH_LONG).show();
                 nostalgiaImageButton.setVisibility(View.INVISIBLE);
-                nostalgiaImageButton.setVisibility(View.VISIBLE);
+                noNostalgiaImageButton.setVisibility(View.VISIBLE);
             }
         });
 
