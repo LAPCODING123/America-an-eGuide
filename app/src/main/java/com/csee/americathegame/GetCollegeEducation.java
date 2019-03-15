@@ -13,7 +13,7 @@ public class GetCollegeEducation extends AppCompatActivity {
 
     ImageButton goToCollegeImageButton;
     Button dontGoToCollegeButton;
-    boolean goesToCollege = true;
+    boolean goesToCollege = MainActivity.rand.nextBoolean();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +27,9 @@ public class GetCollegeEducation extends AppCompatActivity {
         goToCollegeImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(MainActivity.choosenFace != R.id.whiteMaleImageButtonID || MainActivity.choosenFace != R.id.whiteFemaleImageButtonID)
-                    goesToCollege = MainActivity.rand.nextBoolean();
+                if(MainActivity.choosenFace == R.id.whiteMaleImageButtonID ||
+                        MainActivity.choosenFace == R.id.whiteFemaleImageButtonID)
+                    goesToCollege = true; //guranteed for the upper class. Also, the Rich actors
 
                 if(goesToCollege)
                 {
