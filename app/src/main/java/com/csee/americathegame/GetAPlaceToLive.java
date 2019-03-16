@@ -28,6 +28,7 @@ public class GetAPlaceToLive extends AppCompatActivity {
                 }
                 else{
                     Toast.makeText(GetAPlaceToLive.this, "You got a loan on a house", Toast.LENGTH_LONG).show();
+                    MainActivity.payLoan();
                     switchToExperienceNostalgia();
                 }
             }
