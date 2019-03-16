@@ -7,4 +7,71 @@
     android:background="@drawable/american_flag"
     tools:context=".HaveAFamily">
 
+    <TextView
+        android:id="@+id/americaTheeGuideTextViewID9"
+        android:layout_width="660dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/americaHaveAFamily"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="52sp"
+        app:fontFamily="@font/lobster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/child2ImageViewID"
+        android:layout_width="176dp"
+        android:layout_height="174dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/child3ImageViewID"
+        app:layout_constraintEnd_toStartOf="@+id/child3ImageViewID"
+        app:layout_constraintTop_toTopOf="@+id/child3ImageViewID"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/silhouetteofchildstandingshorts" />
+
+    <ImageView
+        android:id="@+id/child3ImageViewID"
+        android:layout_width="176dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/americaTheeGuideTextViewID9"
+        app:srcCompat="@drawable/silhouetteofchildstandingshorts" />
+
+    <ImageView
+        android:id="@+id/child1ImageViewID"
+        android:layout_width="176dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/child2ImageViewID"
+        app:layout_constraintEnd_toStartOf="@+id/child2ImageViewID"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/child2ImageViewID"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/silhouetteofchildstandingshorts" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/child2ImageViewID"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/child2ImageViewID"
+        app:layout_constraintTop_toBottomOf="@+id/child2ImageViewID" />
 </androidx.constraintlayout.widget.ConstraintLayout>
