@@ -78,6 +78,7 @@ public class ChooseEthnicity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(ChooseEthnicity.this,"Greetings Miss", Toast.LENGTH_LONG).show();
                 MainActivity.choosenFace = R.id.whiteFemaleImageButtonID;
+                MainActivity.isWoman = true;
                 switchToChooseCreed();
             }
         });
@@ -88,6 +89,7 @@ public class ChooseEthnicity extends AppCompatActivity {
                 Toast.makeText(ChooseEthnicity.this,"Hola señora", Toast.LENGTH_LONG).show();
                 MainActivity.choosenFace = R.id.tanFemaleImageButtonID;
                 MainActivity.balance -= 100.0;
+                MainActivity.isWoman = true;
                 switchToChooseCreed();
             }
         });
@@ -98,6 +100,7 @@ public class ChooseEthnicity extends AppCompatActivity {
                 Toast.makeText(ChooseEthnicity.this,"Hello Foreigner", Toast.LENGTH_LONG).show();
                 MainActivity.choosenFace = R.id.tannerFemaleImageButtonID;
                 MainActivity.balance -= 200.0;
+                MainActivity.isWoman = true;
                 switchToChooseCreed();
             }
         });
@@ -108,6 +111,7 @@ public class ChooseEthnicity extends AppCompatActivity {
                 Toast.makeText(ChooseEthnicity.this,"Hello ma\'am", Toast.LENGTH_LONG).show();
                 MainActivity.choosenFace = R.id.blackFemaleImageButtonID;
                 MainActivity.balance -= 300.0;
+                MainActivity.isWoman = true;
                 switchToChooseCreed();
             }
         });

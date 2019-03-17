@@ -11,6 +11,7 @@ import android.widget.Toast;
 public class GetAJob extends AppCompatActivity {
 
     ImageButton[] imageButtons = new ImageButton[4];
+    private String jobMessage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +32,13 @@ public class GetAJob extends AppCompatActivity {
 
                 else {
                     MainActivity.pay = 189000.00;
-                    if(MainActivity.choosenFace == R.id.tanFemaleImageButtonID || MainActivity.choosenFace == R.id.whiteFemaleImageButtonID || MainActivity.choosenFace == R.id.tannerFemaleImageButtonID || MainActivity.choosenFace ==R.id.blackFemaleImageButtonID)
+                    if(MainActivity.isWoman)
                         MainActivity.pay *= 0.98; // 2% less pay
                     MainActivity.getPaid();
-                    Toast.makeText(GetAJob.this, "You are a doctor now. Annual Pay: $" + Double.toString(MainActivity.pay) + "\n Balance $" + Double.toString(MainActivity.balance), Toast.LENGTH_LONG).show();
+                    jobMessage = "You are a doctor now. Annual Pay: $" + Double.toString(MainActivity.pay) + "\n Balance $" + Double.toString(MainActivity.balance);
+                    if(MainActivity.isWoman)
+                        jobMessage += "\nWoman so less money";
+                    Toast.makeText(GetAJob.this, jobMessage, Toast.LENGTH_LONG).show();
                     switchToFindHousing();
                 }
             }
@@ -49,10 +53,13 @@ public class GetAJob extends AppCompatActivity {
 
                 else {
                     MainActivity.pay = 68450;
-                    if(MainActivity.choosenFace == R.id.tanFemaleImageButtonID || MainActivity.choosenFace == R.id.whiteFemaleImageButtonID || MainActivity.choosenFace == R.id.tannerFemaleImageButtonID || MainActivity.choosenFace ==R.id.blackFemaleImageButtonID)
+                    if(MainActivity.isWoman)
                         MainActivity.pay *= 0.98; // 2% less pay
                     MainActivity.getPaid();
-                    Toast.makeText(GetAJob.this, "You are a nurse now. Annual Pay: $" + Double.toString(MainActivity.pay) + "\n Balance $" + Double.toString(MainActivity.balance), Toast.LENGTH_LONG).show();
+                    jobMessage = "You are a nurse now. Annual Pay: $" + Double.toString(MainActivity.pay) + "\n Balance $" + Double.toString(MainActivity.balance);
+                    if(MainActivity.isWoman)
+                        jobMessage += "\nWoman so less money";
+                    Toast.makeText(GetAJob.this, jobMessage, Toast.LENGTH_LONG).show();
                     switchToFindHousing();
                 }
             }
@@ -67,10 +74,13 @@ public class GetAJob extends AppCompatActivity {
 
                 else {
                     MainActivity.pay = 45622;
-                    if(MainActivity.choosenFace == R.id.tanFemaleImageButtonID || MainActivity.choosenFace == R.id.whiteFemaleImageButtonID || MainActivity.choosenFace == R.id.tannerFemaleImageButtonID || MainActivity.choosenFace ==R.id.blackFemaleImageButtonID)
+                    if(MainActivity.isWoman)
                         MainActivity.pay *= 0.99; // 1% less pay
                     MainActivity.getPaid();
-                    Toast.makeText(GetAJob.this, "You are a teacher now. Annual Pay: $" + Double.toString(MainActivity.pay) + "\n Balance $" + Double.toString(MainActivity.balance), Toast.LENGTH_LONG).show();
+                    jobMessage = "You are a teacher now. Annual Pay: $" + Double.toString(MainActivity.pay) + "\n Balance $" + Double.toString(MainActivity.balance);
+                    if(MainActivity.isWoman)
+                        jobMessage += "\nWoman, so a little less money";
+                    Toast.makeText(GetAJob.this, jobMessage, Toast.LENGTH_LONG).show();
                     switchToFindHousing();
                 }
             }

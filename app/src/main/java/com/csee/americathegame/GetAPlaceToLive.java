@@ -27,8 +27,9 @@ public class GetAPlaceToLive extends AppCompatActivity {
                     Toast.makeText(GetAPlaceToLive.this, "Can't afford this", Toast.LENGTH_LONG).show();
                 }
                 else{
-                    Toast.makeText(GetAPlaceToLive.this, "You got a loan on a house", Toast.LENGTH_LONG).show();
+                    Toast.makeText(GetAPlaceToLive.this, "You got a mortgage on a house", Toast.LENGTH_LONG).show();
                     MainActivity.payLoan();
+                    MainActivity.getPaid();
                     switchToExperienceNostalgia();
                 }
             }
@@ -42,6 +43,8 @@ public class GetAPlaceToLive extends AppCompatActivity {
                 }
                 else{
                     Toast.makeText(GetAPlaceToLive.this, "A cheaper alternative that is not living in your parents house", Toast.LENGTH_LONG).show();
+                    MainActivity.payLoan();
+                    MainActivity.getPaid();
                     switchToExperienceNostalgia();
                 }
             }
@@ -51,6 +54,8 @@ public class GetAPlaceToLive extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(GetAPlaceToLive.this, "No home, no loan :)", Toast.LENGTH_LONG).show();
+                MainActivity.payLoan();
+                MainActivity.getPaid();
                 switchToExperienceNostalgia();
             }
         });

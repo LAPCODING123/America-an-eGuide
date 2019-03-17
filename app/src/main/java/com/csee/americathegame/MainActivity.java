@@ -22,9 +22,11 @@ public class MainActivity extends AppCompatActivity {
     public static boolean collegEducated = false;
     public static double pay = 0;
     public static final boolean HAVE_RICH_CHEATING_PARENTS = rand.nextBoolean();
+    public static boolean hasToPayCollegeLoan = false;
+    public static boolean isWoman = false;
 
 
-    public static final int NUMBER_OF_CHILDREN = rand.nextInt(3);
+    public static int NUMBER_OF_CHILDREN = rand.nextInt(3) + 1;
     public static final double COST_OF_RAISING_CHILD_PER_DAY = 38.35;//14,000/365 https://www.cbsnews.com/news/cost-of-raising-a-child-parents-save-up/
 
 
@@ -49,6 +51,6 @@ public class MainActivity extends AppCompatActivity {
     public static void getPaid(){
         balance += pay;
     }
-    public static void payLoan() {balance -= 2000;}
+    public static void payLoan() {if(hasToPayCollegeLoan) balance -= 2000;}
     public static void costsOfHavingChildren() {balance -= NUMBER_OF_CHILDREN*COST_OF_RAISING_CHILD_PER_DAY;}
 }

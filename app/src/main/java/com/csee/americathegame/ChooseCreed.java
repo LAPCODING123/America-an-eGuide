@@ -29,7 +29,7 @@ public class ChooseCreed extends AppCompatActivity {
         imageButtons[0].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ChooseCreed.this,"Welcome to the US. God Bless America, am I right!", Toast.LENGTH_LONG).show();
+                Toast.makeText(ChooseCreed.this,"Welcome to the US. God Bless America!", Toast.LENGTH_LONG).show();
                 MainActivity.choosenCreed = R.id.chistianityImageButtonID;
                 switchToGetFreedom();
             }

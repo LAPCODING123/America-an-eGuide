@@ -2,6 +2,7 @@ package com.csee.americathegame;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,7 +25,7 @@ public class SeeButDontKeepNostalgia extends AppCompatActivity {
         nostalgiaImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(SeeButDontKeepNostalgia.this, "Can't timetravel", Toast.LENGTH_LONG).show();
+                Toast.makeText(SeeButDontKeepNostalgia.this, "Can't timetravel\n They were todol-y radical though!", Toast.LENGTH_LONG).show();
                 nostalgiaImageButton.setVisibility(View.INVISIBLE);
                 noNostalgiaImageButton.setVisibility(View.VISIBLE);
             }
@@ -35,8 +36,15 @@ public class SeeButDontKeepNostalgia extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(SeeButDontKeepNostalgia.this, "Welcome back to today", Toast.LENGTH_LONG).show();
+                MainActivity.balance -= 20.00;
+                switchToHaveAFamily();
             }
         });
 
+    }
+
+    private void switchToHaveAFamily(){
+        startActivity(new Intent(SeeButDontKeepNostalgia.this, HaveAFamily.class));
+        finish();
     }
 }

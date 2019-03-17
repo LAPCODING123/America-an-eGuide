@@ -32,7 +32,7 @@ public class HaveFreedom extends AppCompatActivity {
         exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(HaveFreedom.this,"Don't worry; Your free because We know, todolo.", Toast.LENGTH_LONG).show();
+                Toast.makeText(HaveFreedom.this,"Don't worry; Your free because We know todolo.", Toast.LENGTH_LONG).show();
                 switchToChooseCollegeEducation();;
             }
         });

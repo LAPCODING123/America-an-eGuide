@@ -37,6 +37,8 @@ public class GetCollegeEducation extends AppCompatActivity {
                     MainActivity.balance -= 30000;
                     MainActivity.collegEducated = true;
                     Toast.makeText(GetCollegeEducation.this, "Hooray,you have a degree. \nBalance: " + Double.toString(MainActivity.balance), Toast.LENGTH_LONG).show();
+                    if(!MainActivity.HAVE_RICH_CHEATING_PARENTS)
+                        MainActivity.hasToPayCollegeLoan = true;
                     switchToGetJob();
                 }
 
