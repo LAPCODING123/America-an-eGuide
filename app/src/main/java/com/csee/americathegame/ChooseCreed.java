@@ -31,7 +31,7 @@ public class ChooseCreed extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(ChooseCreed.this,"Welcome to the US. God Bless America!", Toast.LENGTH_LONG).show();
                 MainActivity.choosenCreed = R.id.chistianityImageButtonID;
-                switchToGetFreedom();
+                switchToGetEnterAgeForFreedom();
             }
         });
 
@@ -40,7 +40,7 @@ public class ChooseCreed extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(ChooseCreed.this,"Shalom!", Toast.LENGTH_LONG).show();
                 MainActivity.choosenCreed = R.id.judaismImageButtonID;
-                switchToGetFreedom();
+                switchToGetEnterAgeForFreedom();
             }
         });
 
@@ -49,7 +49,7 @@ public class ChooseCreed extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(ChooseCreed.this,"Careful with your clothing...", Toast.LENGTH_LONG).show();
                 MainActivity.choosenCreed = R.id.islamImageButtonID;
-                switchToGetFreedom();
+                switchToGetEnterAgeForFreedom();
             }
         });
 
@@ -58,7 +58,7 @@ public class ChooseCreed extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(ChooseCreed.this,"Not American (to be fair though, like the other creeds)", Toast.LENGTH_LONG).show();
                 MainActivity.choosenCreed = R.id.buddhismImageButtonID;
-                switchToGetFreedom();
+                switchToGetEnterAgeForFreedom();
             }
         });
 
@@ -67,7 +67,7 @@ public class ChooseCreed extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(ChooseCreed.this,"Not American (to be fair though, like the other creeds)", Toast.LENGTH_LONG).show();
                 MainActivity.choosenCreed = R.id.hindiusiImageButtonID;
-                switchToGetFreedom();
+                switchToGetEnterAgeForFreedom();
             }
         });
 
@@ -76,14 +76,14 @@ public class ChooseCreed extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(ChooseCreed.this,"Can\'t beat \'em don\'t join \' I guess", Toast.LENGTH_LONG).show();
                 MainActivity.choosenCreed = R.id.hindiusiImageButtonID;
-                switchToGetFreedom();
+                switchToGetEnterAgeForFreedom();
             }
         });
 
     }
 
-    private void switchToGetFreedom(){
-        startActivity(new Intent(ChooseCreed.this, HaveFreedom.class));
+    private void switchToGetEnterAgeForFreedom(){
+        startActivity(new Intent(ChooseCreed.this, InternetServicesAgeProhibition.class));
         finish();
     }
 }

@@ -8,9 +8,9 @@
     tools:context=".HaveFreedom">
 
     <TextView
-        android:id="@+id/americaTheeGuideTextViewID8"
-        android:layout_width="660dp"
-        android:layout_height="68dp"
+        android:id="@+id/americaHaveFreedomTextViewID"
+        android:layout_width="661dp"
+        android:layout_height="125dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
@@ -31,9 +31,9 @@
         android:layout_height="268dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/americaTheeGuideTextViewID8"
+        app:layout_constraintEnd_toEndOf="@+id/americaHaveFreedomTextViewID"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/americaTheeGuideTextViewID8" />
+        app:layout_constraintStart_toStartOf="@+id/americaHaveFreedomTextViewID" />
 
     <Button
         android:id="@+id/thatsEnoughFreedomButtonID"
@@ -48,8 +48,8 @@
         android:text="@string/thatsEnoughFreedom"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/webViewID"
-        app:layout_constraintEnd_toEndOf="@+id/americaTheeGuideTextViewID8"
+        app:layout_constraintEnd_toEndOf="@+id/americaHaveFreedomTextViewID"
         app:layout_constraintStart_toEndOf="@+id/webViewID"
-        app:layout_constraintTop_toBottomOf="@+id/americaTheeGuideTextViewID8" />
+        app:layout_constraintTop_toBottomOf="@+id/americaHaveFreedomTextViewID" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

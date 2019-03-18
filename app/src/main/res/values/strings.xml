@@ -23,4 +23,6 @@
     <string name="thatsEnoughFreedom">That\'s Engough Freedom</string>
     <string name="noReligion">No Religion</string>
     <string name="americaHaveAFamily">America: Hava a Family</string>
+    <string name="inputAge">Input Age e.g. \"13\"</string>
+    <string name="americaNeedsToKnowYourAgeBeforeThisNextFreedom">America: ...The eGuide Needs to Know Your Age Before This Next Freedom</string>
 </resources>

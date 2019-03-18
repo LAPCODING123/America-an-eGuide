@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     public static final boolean HAVE_RICH_CHEATING_PARENTS = rand.nextBoolean();
     public static boolean hasToPayCollegeLoan = false;
     public static boolean isWoman = false;
+    public static int age = 0;
 
 
     public static int NUMBER_OF_CHILDREN = rand.nextInt(3) + 1;

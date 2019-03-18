@@ -16,7 +16,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Redscare"
             android:screenOrientation="landscape" ></activity>
-        <activity android:name=".Prohibition"
+        <activity android:name=".InternetServicesAgeProhibition"
             android:screenOrientation="landscape" />
         <activity android:name=".HaveAFamily"
             android:screenOrientation="landscape" />
