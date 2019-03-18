@@ -64,14 +64,14 @@
         app:srcCompat="@drawable/silhouetteofchildstandingshorts" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/continueButtonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Button"
+        android:text="@string/nowSaveOutFuture"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/child2ImageViewID"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/child2ImageViewID"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/child2ImageViewID" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,14 +10,13 @@
     <TextView
         android:id="@+id/americaHaveFreedomTextViewID"
         android:layout_width="661dp"
-        android:layout_height="125dp"
+        android:layout_height="106dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
         android:text="@string/americaHaveFreedomWithInterner"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/darker_gray"
-        android:textSize="52sp"
+        android:textSize="30sp"
         app:fontFamily="@font/lobster"
         app:layout_constraintBottom_toTopOf="@+id/webViewID"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,8 +26,8 @@
 
     <WebView
         android:id="@+id/webViewID"
-        android:layout_width="541dp"
-        android:layout_height="268dp"
+        android:layout_width="508dp"
+        android:layout_height="226dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/americaHaveFreedomTextViewID"
@@ -49,7 +48,9 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/webViewID"
         app:layout_constraintEnd_toEndOf="@+id/americaHaveFreedomTextViewID"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toEndOf="@+id/webViewID"
-        app:layout_constraintTop_toBottomOf="@+id/americaHaveFreedomTextViewID" />
+        app:layout_constraintTop_toBottomOf="@+id/americaHaveFreedomTextViewID"
+        app:layout_constraintVertical_bias="0.672" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

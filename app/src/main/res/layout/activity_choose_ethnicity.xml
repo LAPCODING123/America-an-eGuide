@@ -8,6 +8,40 @@
     tools:context=".ChooseEthnicity">
 
     <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="20dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="@+id/blackFemaleImageButtonID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toEndOf="@+id/blackMaleImageButtonID"
+        app:layout_constraintTop_toTopOf="@+id/blackFemaleImageButtonID"
+        app:srcCompat="@drawable/greendollarsymbol" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="39dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/whiteFemaleImageButtonID"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/greendollarsymbol" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="37dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/whiteFemaleImageButtonID"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/greendollarsymbol" />
+
+    <ImageView
         android:id="@+id/imageView4"
         android:layout_width="35dp"
         android:layout_height="49dp"
@@ -50,11 +84,12 @@
         android:layout_height="49dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/whiteFemaleImageButtonID"
+        app:layout_constraintBottom_toBottomOf="@+id/whiteMaleImageButtonID"
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintHorizontal_bias="0.777"
         app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/whiteMaleImageButtonID"
+        app:layout_constraintVertical_bias="0.863"
         app:srcCompat="@drawable/greendollarsymbol" />
 
     <TextView
@@ -104,13 +139,9 @@
         android:id="@+id/tannerMaleImageButtonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/blackMaleImageButtonID"
-        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toEndOf="@+id/tanMaleImageButtonID"
         app:layout_constraintTop_toBottomOf="@+id/americaTheeGuideTextViewID2"
         app:srcCompat="@drawable/tannermale" />
@@ -120,8 +151,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
         app:layout_constraintEnd_toEndOf="@+id/americaTheeGuideTextViewID2"
         app:layout_constraintTop_toBottomOf="@+id/americaTheeGuideTextViewID2"
         app:srcCompat="@drawable/blackmale" />
@@ -169,7 +200,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/blackMaleImageButtonID"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/blackMaleImageButtonID"
         app:layout_constraintTop_toBottomOf="@+id/blackMaleImageButtonID"
         app:srcCompat="@drawable/blackfemale" />
@@ -178,26 +209,23 @@
         android:id="@+id/imageView"
         android:layout_width="33dp"
         android:layout_height="46dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toStartOf="@+id/whiteMaleImageButtonID"
-        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/whiteMaleImageButtonID"
-        app:layout_constraintVertical_bias="0.862"
+        app:layout_constraintTop_toBottomOf="@+id/americaTheeGuideTextViewID2"
         app:srcCompat="@drawable/greendollarsymbol" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="35dp"
         android:layout_height="49dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/whiteFemaleImageButtonID"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/whiteMaleImageButtonID"
         app:layout_constraintEnd_toStartOf="@+id/whiteMaleImageButtonID"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:srcCompat="@drawable/greendollarsymbol" />
 </androidx.constraintlayout.widget.ConstraintLayout>

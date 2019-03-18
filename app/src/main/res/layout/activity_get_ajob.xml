@@ -32,6 +32,8 @@
         android:layout_marginTop="84dp"
         android:scaleType="centerInside"
         app:layout_constraintEnd_toStartOf="@+id/nurseImageBurttonID"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/americaTheeGuideTextViewID6"
         app:srcCompat="@drawable/doctor" />
 

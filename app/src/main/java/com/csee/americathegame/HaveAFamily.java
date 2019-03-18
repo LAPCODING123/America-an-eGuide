@@ -2,13 +2,17 @@ package com.csee.americathegame;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 public class HaveAFamily extends AppCompatActivity {
-    private static ImageView[] children;
+    private ImageView[] children;
+    private Button continueButton;
+
 
 
     @Override
@@ -20,6 +24,8 @@ public class HaveAFamily extends AppCompatActivity {
                 findViewById(R.id.child2ImageViewID),
                 findViewById(R.id.child3ImageViewID)
         };
+
+        continueButton = findViewById(R.id.continueButtonID);
 
         if(MainActivity.NUMBER_OF_CHILDREN != 2)
             MainActivity.NUMBER_OF_CHILDREN = MainActivity.rand.nextInt(3) + 1;
@@ -46,5 +52,16 @@ public class HaveAFamily extends AppCompatActivity {
 
        // Toast.makeText(HaveAFamily.this, "Balance: " + Double.toString(MainActivity.balance) + ".", Toast.LENGTH_LONG).show();
 
+        continueButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switchToRedscare();
+            }
+        });
+    }
+
+    private void switchToRedscare(){
+        startActivity(new Intent(HaveAFamily.this, Redscare.class));
+        finish();
     }
 }

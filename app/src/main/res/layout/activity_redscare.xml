@@ -7,4 +7,47 @@
     android:background="@drawable/american_flag"
     tools:context=".Redscare">
 
+    <TextView
+        android:id="@+id/americaTheeGuideTextViewID10"
+        android:layout_width="660dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/saveAmerica"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="24sp"
+        app:fontFamily="@font/allerta_stencil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/americaTheeGuideTextViewID8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/americaTheeGuideTextViewID8"
+        app:layout_constraintTop_toBottomOf="@+id/chinaImageViewID" />
+
+    <TextView
+        android:id="@+id/americaTheeGuideTextViewID8"
+        android:layout_width="660dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/americaRedscare"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="52sp"
+        app:fontFamily="@font/allerta_stencil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/chinaImageViewID"
+        android:layout_width="430dp"
+        android:layout_height="182dp"
+        app:layout_constraintBottom_toTopOf="@+id/americaTheeGuideTextViewID10"
+        app:layout_constraintEnd_toEndOf="@+id/americaTheeGuideTextViewID8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/americaTheeGuideTextViewID8"
+        app:layout_constraintTop_toBottomOf="@+id/americaTheeGuideTextViewID8"
+        app:srcCompat="@drawable/chinasilhouette" />
 </androidx.constraintlayout.widget.ConstraintLayout>
